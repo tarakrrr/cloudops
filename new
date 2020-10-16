@@ -1,0 +1,12 @@
+import os
+path=input("the path we need is: ")
+direct=os.listdir(path)
+
+for each in direct:
+  f_d_p=os.path.join(path,each)
+  print(f_d_p)
+  if os.path.isfile(f_d_p):
+    print(f"{f_d_p} is a file")
+  else:
+    print(f"{f_d_p} is a directory")
+  
